@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Blokker</title>
+</head>
+<body>
+
+
+    <!--Main kode-->
+    <!--Hvis du leser dette er du kul mohahah-->
+    <h3>Du kan ikke skrive ting som dette: spillespill, youtube, lagged også videre</h3>
+    <h2>Skriv det inn sånn: youtube.com, spillespill.no, lagged.com</h2>
+    <h4>Dette er "Demo" versjonen av nettsiden, så spillespill og youtube funker ikke. Tror alt annet funker.</h4>
+    <h3 class="quicklinks">Kjappe lenker</h3>
+    <a  class="chat"   href="https://frensy12.github.io/chat">Holmen Skole Chat</a>
+    <form onsubmit="unblock()">
+        <h1>Anti Blokkering Søk</h1>
+        <h2>Og anti Drammen*</h2>
+        <input id="input" type="text">
+        <input type="submit" value="Søk"></input>
+        </input>
+      </form>
+      <div class="footer">
+      </div>
+      <!--Javascript, eller hvordan det fungerer idk-->
+      <script defer>
+        function unblock(){
+        let url = document.getElementById("input").value
+          console.log(url)
+        var win = window.open("https://translate.google.com/translate?sl=auto&tl=en&u=" + url, '_blank');
+        win.focus();
+        console.log(window.location)
+        }
+      </script>
+      <!----------------------------------------------------->
+    
+    </body>
+</html>
